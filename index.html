@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet"> 
     <link href="./fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.css" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <!-- <link href="./fontawesome-free-5.11.2-web/css/all.css/css/brands.css" rel="stylesheet">
     <link href="./fontawesome-free-5.11.2-web/css/all.css/css/solid.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/mickeystrike.png">
     <title>MickeyStrike</title>
 </head>
 <body>
@@ -21,10 +25,10 @@
             <li class="navbar-menu menu-4"><a class="header-link" href="#Contact">Contact</a></li>
             <li class="navbar-menu menu-5">Login
                 <div class="login">
-                    <label for="Login">Sign In</label>
+                    <label for="Login" id="label-login">Sign In</label>
                     <input class="text-input" type="text" placeholder="Email Address" required>
                     <input class="text-input" type="password" placeholder="Password" required>
-                    <input type="checkbox" name="check" value="check" id="check"><span>Remember me?</span>
+                    <input type="checkbox" name="check" value="check" id="check"><label for="check">Remember me?</label>
                     <input type="submit" name="login" id="login" value="Login">
                     <br>
                     <input type="submit" name="signup" id="signup" value="Sign up">
@@ -170,10 +174,14 @@
                                             <tr>
                                                 <td>
                                                     <!-- <label for="icon0"  id="icon0"> -->
-                                                        <span class="fas icon ion-paper-plane icon0"></span>
-                                                    <!-- </label> -->
+                                                        
+                                                        <!-- <span class="fas icon ion-paper-plane icon0"></span> -->
+                                                        
+                                                        <span class="fab fa-telegram icon0"></span>
+
+                                                        <!-- </label> -->
                                                 </td>
-                                                <td><a href="https://t.me/MickeyStrike" target="_blank">Telegram</a></td>
+                                                <td><a href="https://t.me/MspanckeyStrike" target="_blank">Telegram</a></td>
                                             </tr>
                                         </table>
                             </div>
@@ -218,10 +226,14 @@
                                             <tr>
                                                 <td>
                                                     <!-- <label for="icon0"  id="icon0"> -->
-                                                        <span class="fas icon ion-logo-line icon0"></span>
-                                                    <!-- </label> -->
+
+                                                        <!-- <span class="fab fa-line-logo-line icon0"></span> -->
+                                                    
+                                                        <span class="fab fa-line icon0"></span>
+
+                                                        <!-- </label> -->
                                                 </td>
-                                                <td><a href="https://line.me/ti/p/x5yl8RqOaD" target="_blank">Line</a></td>
+                                                <td><a href="https://lspanne.me/ti/p/x5yl8RqOaD" target="_blank">Line</a></td>
                                             </tr>
                                         </table>
                             </div>
@@ -242,7 +254,8 @@
                                             <tr>
                                                 <td>
                                                     <!-- <label for="icon0"  id="icon0"> -->
-                                                        <span class="fas icon ion-logo-discord icon0"></span>
+                                                        <!-- <span class="fas icon ion-logo-discord icon0"></span> -->
+                                                        <span class="fab fa-discord icon0"></span>
                                                     <!-- </label> -->
                                                 </td>
                                                 <td><a href="https://discord.gg/q7e2uU" target="_blank">Discord</a></td>
@@ -252,6 +265,12 @@
                         </div>
                 </div>
             </div>
+    </div>
+
+    <div id="div-footer">
+        <footer>
+            <h5>&copy; Muhamad Irfan Maulana || 2020</h5>
+        </footer>
     </div>
 </body>
 </html>

@@ -14,12 +14,21 @@ header{
     position: fixed;
 }
 
+@keyframes example{
+    0% {margin-right: 10%;}
+    50% {margin-right: 7%;}
+    100% {margin-right: 10%;}
+}
+
 header li{
     list-style: none;
     display: inline-block;
     margin: auto;
     padding-top: 3px;
     margin-right: 10%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
     /* margin-left: 5%; */
 }
 
@@ -79,15 +88,18 @@ header li{
     transition:0.5s;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
+
 .menu-5:hover{
+    cursor: pointer;
     font-size:21px;
     transition:0.5s;
     text-shadow:1px 1px 2px black, 0 0 25px white;
-    /* cursor:pointer; */
 }
 
 .login{
+    cursor: none;
     display: none;
     position: absolute;
     background-color: rgb(0, 0, 0, 0.5);
@@ -96,6 +108,18 @@ header li{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 25px 30px;
     border-radius: 5px;
+}
+
+.login>label{
+    font-size: 15px;
+}
+
+.login>#label-login{
+    font-size: 20px;
+}
+
+.login>span{
+    cursor: pointer;
 }
 
 .text-input{
@@ -214,7 +238,7 @@ body{
 
 .kotak-grid1 .grid0{
 
-    text-align: left;
+    text-align: center;
     display: grid;
     grid-row: 1;
     grid-column: 1 / span 2;
@@ -238,7 +262,7 @@ body{
     transition: 0.5s;
     background-color: rgb(255, 255, 255);
     color: rgba(190, 25, 177);
-    font-size: 70px;
+    font-size: 60px;
     width: 55%;
     height: 120px;
     box-shadow: 0 20px 20px rgba(190, 25, 177, 0.3);
@@ -582,7 +606,6 @@ body{
 }
 
 .kotak-grid2 .grid29{
-
     text-align: left;
     display: grid;
     grid-row: 4;
@@ -616,4 +639,27 @@ body{
 .kotak-grid2 a{
     text-decoration: none; 
     color: black;
+}
+
+footer{
+    width: 100%;
+    /* background-image: url('img/sample-pattern.png'); */
+    background: black;
+    display: inline-block;
+    opacity: 0.8;
+    text-align: white;
+    background-attachment: center;
+    /* position: relative; */
+    position: static;
+}
+
+#div-footer{
+    background: rgb(0, 255, 255, 0.5);
+}
+
+footer>h5{
+    font-size: 15px ;
+    font-weight: bold;
+    text-align: center;
+    color: white;
 }
